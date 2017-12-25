@@ -18,53 +18,69 @@
 	
 	<header class="header">
 
-		<div class="container relative">
-			
-			<nav class="navbar navbar-expand-md navbar-toggleable-md">
-				<a class="navbar-brand" href="#">
-					<img src="img/logo.svg" alt="">
-				</a>
+		<div class="nav-wr">
+			<div class="container relative">
+				<nav class="navbar navbar-dark navbar-expand-lg navbar-toggleable-lg">
+					<a class="navbar-brand" href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Экспертам</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Владельцам</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Контакты</a>
-						</li>
-					</ul>
-					<form class="form-inline mt-2 mt-md-0">
-						<input class="form-control mr-sm-2" type="text" placeholder="Search">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-					</form>
-				</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-			</nav>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Экспертам</a>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link" href="#">Владельцам</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Контакты</a>
+							</li>
+							<hr/>
+						</ul>
+						<div class="navbar-right">
+							<a class="btn-group navbar-user js-popup" href="#signup-popup">
+								<span class="icon-social"></span>
+								<span class="navbar-user__text">Войти</span>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
 		</div>
-		
+
 		<div class="carousel slide main-carousel js-main-carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active" style="background-image: url(img/stock-photo-202594593.jpg);">
 					<div class="container">
-		              <div class="carousel-caption text-center d-block">
-		                <h1>E-HOTEL</h1>
-		                <p>Классификация объектов туристической индустрии</p>
-		                <p><a class="btn btn-lg btn-primary" href="#" role="button">ЗАРЕГИСТРИРОВАТЬСЯ</a></p>
-		              </div>
-		            </div>					
+						<div class="carousel-caption text-center d-block">
+							<h1 class="h1">E-HOTEL</h1>
+							<h2 class="h2">Классификация объектов <br>туристической индустрии</h2>
+							<p><a class="btn btn-lg btn-border js-popup" href="#signup-popup">ЗАРЕГИСТРИРОВАТЬСЯ</a></p>
+						</div>
+					</div>
 				</div>
 				<div class="carousel-item" style="background-image: url(img/stock-photo-202594593.jpg);">
-			
+					<div class="container">
+						<div class="carousel-caption text-center d-block">
+							<h1 class="h1">E-HOTEL</h1>
+							<h2 class="h2">Классификация объектов <br>туристической индустрии</h2>
+							<p><a class="btn btn-lg btn-border js-popup" href="#signup-popup">ЗАРЕГИСТРИРОВАТЬСЯ</a></p>
+						</div>
+					</div>
 				</div>
 				<div class="carousel-item" style="background-image: url(img/stock-photo-202594593.jpg);"">
-					
+					<div class="container">
+						<div class="carousel-caption text-center d-block">
+							<h1 class="h1">E-HOTEL</h1>
+							<h2 class="h2">Классификация объектов <br>туристической индустрии</h2>
+							<p><a class="btn btn-lg btn-border js-popup" href="#signup-popup">ЗАРЕГИСТРИРОВАТЬСЯ</a></p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<a class="carousel-control-prev js-main-carousel-arr-prev" href="#mainCarouselControls" role="button">
@@ -141,7 +157,7 @@
 					</ul>
 
 					<div class="text-center">
-						<a class="btn btn-lg btn-primary btn-green open-popup-link" href="#signup-popup" role="button">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+						<a class="btn btn-lg btn-primary btn-green js-popup" href="#signup-popup" role="button">ЗАРЕГИСТРИРОВАТЬСЯ</a>
 					</div>
 				</div>
 			</div>
@@ -171,7 +187,7 @@
 	</footer>
 
 	<div id="signup-popup" class="popup mfp-hide">
-		<p class="popup-title">Регистрация</p>
+		<p class="popup-title">Вход</p>
 		<div class="popup__body">
 			<div class="popup-form">
 				<p class="text-title">через социальную сеть</p>
@@ -209,8 +225,62 @@
 							</label>
 						</div>
 						<div class="text-center">
+							<button type="submit" class="btn btn-primary btn-green btn-lg">Войти</button>
+							<p class="popup-form__tip">или <a href="#reg-popup" class="js-popup">Зарегистрироваться</a></p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="reg-popup" class="popup mfp-hide">
+		<p class="popup-title">Регистрация</p>
+		<div class="popup__body">
+			<div class="popup-form">
+				<p class="text-title">через социальную сеть</p>
+				<ul class="popup-social">
+					<li class="popup-social__item"><a href="#">
+						<span class="popup-social__icon icon-vk"></span></a>
+					</li>
+					<li class="popup-social__item">
+						<a href="#"><span class="popup-social__icon icon-odnoklassniki-logo"></span></a>
+					</li>
+					<li class="popup-social__item"><a href="#">
+						<span class="popup-social__icon icon-facebook"></span></a>
+					</li>
+					<li class="popup-social__item">
+						<a href="#"><span class="popup-social__icon icon-google-plus"></span></a>
+					</li>
+				</ul>
+				<p class="text-title">или</p>
+				<div class="form">
+					<form>
+						<div class="form-error">
+							Сообщение об ошибке
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control error" aria-describedby="emailHelp" placeholder="Имя">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control error" aria-describedby="emailHelp" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="Пароль">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="Повторите пароль">
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+								<input type="checkbox" class="form-check-input" checked hidden>
+								<span class="checkbox-icon icon-check-mark"></span>
+								Я принимаю условия <a href="#">пользовательского соглашения</a>
+							</label>
+						</div>
+						<div class="text-center">
 							<button type="submit" class="btn btn-primary btn-green btn-lg">Зарегистрироваться</button>
-									<p class="popup-form__tip">или <a href="#">Войти</a></p>
+							<p class="popup-form__tip">или <a href="#signup-popup" class="js-popup">Войти</a></p>
 						</div>
 					</form>
 				</div>

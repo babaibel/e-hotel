@@ -24,7 +24,7 @@ $(function() {
 
 $(function() {
 
-	$('.open-popup-link').magnificPopup({
+	$('.js-popup').magnificPopup({
 		type:'inline',
 		midClick: true,
 		showCloseBtn: false

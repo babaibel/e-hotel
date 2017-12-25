@@ -4,14 +4,14 @@
 @import "footer.less";
 
 @font-face {
-    font-family: 'icon font';
-    src: url('../fonts/icon-font.eot');
-    src: url('../fonts/icon-font.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/icon-font.woff') format('woff'),
-         url('../fonts/icon-font.ttf') format('truetype'),
-         url('../fonts/icon-font.svg#icon-font') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'icon font';
+	src: url('../fonts/icon-font.eot');
+	src: url('../fonts/icon-font.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/icon-font.woff') format('woff'),
+		 url('../fonts/icon-font.ttf') format('truetype'),
+		 url('../fonts/icon-font.svg#icon-font') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 [class*='icon-']:before{
 	display: inline-block;
@@ -132,12 +132,27 @@ img{
   outline:none;
 }
 
+.btn{
+	cursor: pointer;
+}
+
 .relative{
 	position: relative;
 }
 
 .trn{
 	transition: all 0.3s ease;
+}
+
+.h1{
+	font-weight: 400;
+	font-size: 50px;
+	margin: 0 0 35px;
+	text-align: center;
+	line-height: 1.4;
+	&--xl{
+		font-size: 72px;
+	}
 }
 
 .h2{
@@ -439,7 +454,20 @@ img{
 	}
 	.btn-primary{
 		padding-left: 30px;
-    	padding-right: 30px;
+		padding-right: 30px;
+	}
+	.h1{
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+	.popup__body{
+		padding: 25px; 
+	}
+	.popup .form-error{
+		margin: 0 -25px 20px;
+	}
+	.popup-social__item{
+		margin: 0 5px;
 	}
 }
 
